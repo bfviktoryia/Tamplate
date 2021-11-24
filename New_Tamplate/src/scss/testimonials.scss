@@ -1,0 +1,41 @@
+.slider {
+    &-item {
+        width: 100%;
+        @include wrap;
+        flex-direction: row;
+        background-color: $purple;
+
+    }
+    &-image {
+        width: 50%;
+img {
+    width: 100%;
+    height: 100%;    
+
+}    }
+    &-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        &_content {
+            max-width: 471px;
+            padding: 0 15px;
+        }
+        p {
+         font-size: 2.25rem;
+         color: $white;
+         font-family: 'Cardo';
+        margin-bottom: 25px;
+        }
+        span {
+            text-transform: uppercase;
+            font-size: 0.8125rem;
+            color: $white;
+
+        }
+        
+
+    }
+}

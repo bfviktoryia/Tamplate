@@ -1,0 +1,71 @@
+@import "../scss/fonts.scss";
+@import "../scss/cdn.scss";
+@import "../scss/mixins.scss";
+@import "../scss/variables.scss";
+@import "../scss/features.scss";
+@import "../scss/header.scss";
+@import "../scss/works.scss";
+@import "../scss/team.scss";
+@import "../scss/footer.scss";
+@import "../scss/download.scss";
+@import "../scss/testimonials.scss";
+
+html {
+    @media (max-width:1024px){
+font-size: 14px;
+    }
+    @media (max-width:900px){
+        font-size: 13px;
+            }
+    @media (max-width:768px){
+        font-size: 12px;
+                    }
+    @media (max-width:768px){
+        font-size: 10px;
+                                    }
+
+}
+p {
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+
+}
+section {
+    padding: 50px 0;
+    @media (max-width:768px){
+        padding: 40px 0;
+    }
+}
+header {
+    padding-bottom: 70px;
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;     
+    // padding задается, чтобы содержимое не прилипало к краям экрана
+    // далее для безопасного отступа элементам контейнера задается margin
+    position: relative; 
+    z-index: 2;
+    // position: relative; 
+    // z-index: 2;
+    // задаются для создания маски - наложение полупрозрачного цвета на bg image
+
+}
+
+

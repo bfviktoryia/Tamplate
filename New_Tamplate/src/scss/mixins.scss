@@ -1,0 +1,6 @@
+// вставка миксина @include
+
+@mixin wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
