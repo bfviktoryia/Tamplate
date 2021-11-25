@@ -120,6 +120,11 @@ html {
   padding: 15px 0;
   margin-bottom: 130px;
 }
+@media (max-width: 425px) {
+  .banner-wrap {
+    border-bottom: none;
+  }
+}
 .banner-wrap .banner-logo {
   margin: 0 15px;
 }

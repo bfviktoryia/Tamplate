@@ -30,6 +30,12 @@
     padding: 15px 0;
     margin-bottom: 130px;
 
+    @media (max-width: 425px) {
+        border-bottom: none;
+ 
+    }
+
+
     .banner-logo {
         margin: 0 15px;
             .banner-logo-text {
