@@ -2,12 +2,15 @@
 
 .works-wrap {
     @include wrap;
+    @media (max-width: 445px){
+flex-direction: column;  
+    }
 }
 .works-item {
-    @include wrap;
     position: relative;
-    transition: 0.3s;   
     max-width: 25%;
+    max-height: 339px;
+    overflow: hidden;
 
 &:hover  &-content {
     display: flex;
@@ -23,12 +26,14 @@
 }
 
     &_image {
-        max-width: 379px;
+width: 100%;
+height: 100%;
     }
 
     &_image img {   
         max-width: 100%;
         max-height: 100%;
+        object-fit: cover;
         } 
                      
 &-content {
@@ -40,6 +45,7 @@
        justify-content: center;
        align-items: center;
         position: absolute;
+        transition: 0.3s;   
         top: 0;
         left: 0;
         z-index: 2;
@@ -75,6 +81,16 @@
     display: none;}
 
  &:nth-child(4){
+        display: none;
+}
+
+}
+@media (max-width: 445px){
+    max-width: 100%;   
+&:nth-child(5){
+    display: none;}
+
+ &:nth-child(6){
         display: none;
 }
 

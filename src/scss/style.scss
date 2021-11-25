@@ -23,7 +23,9 @@ font-size: 14px;
     @media (max-width:768px){
         font-size: 10px;
                                     }
-
+    @media (max-width:445px){
+        font-size: 13px;
+                                                                    }
 }
 p {
     display: block;
@@ -51,6 +53,7 @@ section {
         padding: 40px 0;
     }
 }
+
 header {
     padding-bottom: 70px;
 }
