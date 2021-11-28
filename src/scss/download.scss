@@ -10,8 +10,9 @@
         text-transform: capitalize;
         line-height: 60px;  
         text-align: center;
-        line-height: 21px; 
+        line-height: 21.13px; 
         margin-bottom: 20px;
+
 }
     &-description {
         font-size: 1.125rem;
@@ -19,6 +20,9 @@
         text-transform: uppercase;
         text-align: center;
         margin-bottom: 50px;
+        p {
+            line-height: 21.13px;
+        }
     }
 
     &-link {
@@ -26,15 +30,18 @@
         height: 79px;
         background-color: $red;
         text-align: center;
-
-
         padding: 25px;
         cursor: pointer;
         transition: 0.2s;
 
         &:hover {
-            transform: scale(1.1);
+            background-color: $red-hover-button;
             transition: 0.2s;
+        }
+        &:active {
+            background-color: $red;
+            transition: 0.2s;
+    box-shadow: 4px 4px 30px 1px $red-hover;
         }
         a {
             font-size: 1.5rem;

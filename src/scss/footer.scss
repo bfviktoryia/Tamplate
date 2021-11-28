@@ -48,6 +48,7 @@
     font-size: 1.125rem;
     font-weight: 400; 
     color: $white;   
+    line-height: 21.13px;
 
    }
 }
@@ -71,6 +72,9 @@
     margin: auto;
     max-width: 370px;
     text-align: center;
+    color: $text-grey;
+    line-height: 21.13px;
+
     .name {
         color: $white;
     }

@@ -10,6 +10,7 @@
     display: flex;
     justify-content: center;
 
+
 &::after {
    content: "";
    display: block;
@@ -61,13 +62,13 @@
 .navigation {  }
 
     .navigation-burger {
-        
             display: block;
             width: 25px;
             height: 5px;
             border-bottom: 2px solid white;
             margin: 0 15px;
             position: relative;
+            cursor: pointer;
             display: none;
     
             @media (max-width: 854px){
@@ -88,11 +89,12 @@
                 border-top: 2px solid white;
                 position: absolute;
                 bottom: 200%;
-            }      
+            }     
     }
     
 
 .navigation-list { 
+    display: flex;
     width: 670px;
     margin: 0 15px;
    @include wrap;
@@ -101,7 +103,6 @@
 
    @media (max-width: 854px){
     display: none;
-    
                 }
 
   &_item {
@@ -116,7 +117,17 @@
          display: block;
          position: absolute;
          top: 200%;
-         left: 0;}
+         left: 0;         
+         }        
+}
+&:active::after {
+    content: "";
+    width: 100%;
+    border-bottom: 4px solid $red-hover-button;
+    display: block;
+    position: absolute;
+    top: 200%;
+    left: 0; 
 }
 }
        a {
@@ -124,6 +135,9 @@
          font-size: 0.875rem;
          color: $white;
          font-weight: 700;
+         &:active {
+            color: $red-hover-button;
+        }
          
 }
 }
@@ -135,6 +149,13 @@ h1 {
     font-weight: 900;
     text-align: center;
     margin-bottom: 34.5px;
+
+    @media (max-width: 425px) {
+        font-size: 3rem;
+    }
+    @media (max-width: 320px) {
+        font-size: 2.5rem;
+    }
 }
 .banner-description p {
     font-size: 1.5rem;
@@ -153,10 +174,15 @@ h1 {
     transition: 0.3s;
     
     &:hover {
-        transform: scale(1.1);
-        transition: 0.3s;
-
+        background-color: $red-hover-button;
+        transition: 0.2s;
     }
+    &:active {
+        background-color: $red;
+        transition: 0.2s;
+box-shadow: 4px 4px 30px 1px $red-hover;
+    }
+    
 
     a {
         text-decoration: none;
