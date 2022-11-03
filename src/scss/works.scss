@@ -15,7 +15,7 @@ flex-direction: column;
 
 &:hover  &-content {
     display: flex;
-    transition: 0.3s;
+    transition: 0.2s;
     animation-name: content;
     animation-duration: 0.3s;
         @keyframes content {
@@ -46,7 +46,7 @@ transform: scale(1.2);
        justify-content: center;
        align-items: center;
         position: absolute;
-        transition: 0.3s;   
+        transition: 0.2s;   
         top: 0;
         left: 0;
         z-index: 2;
